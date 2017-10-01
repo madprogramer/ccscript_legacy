@@ -21,6 +21,11 @@ setup(name="ccscript",
       version="1.338",
       description="ccscript",
       url="http://starmen.net/pkhack/ccscript",
+      print ("""We've got trouble:
+      Source Files:{},
+      extra_compile_args:{},
+      extra_link_args:{}
+      """.format(source_files,extra_compile_args,extra_link_args) )
       ext_modules=[
           Extension("ccscript",
                     source_files,
