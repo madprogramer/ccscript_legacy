@@ -12,7 +12,7 @@ extra_compile_args = []
 extra_link_args = []
 
 if platform.system() == "Linux" or platform.system() == "Darwin":
-      extra_compile_args = ["-std=c++14"]
+      extra_compile_args = ["-std=c++17"]
       extra_link_args = ["-lstdc++fs"]
       #print ("Args Fixed")
 #print ("{} is the current system on this device".format( platform.system()) )
