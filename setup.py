@@ -14,9 +14,9 @@ extra_link_args = []
 if platform.system() == "Linux" or platform.system() == "Darwin":
       extra_compile_args = ["-std=c++14"]
       extra_link_args = ["-lstdc++fs"]
-      print ("Args Fixed")
-print ("{} is the current system on this device".format( platform.system()) )
-print ("Setup is almost underway..." )
+      #print ("Args Fixed")
+#print ("{} is the current system on this device".format( platform.system()) )
+#print ("Setup is almost underway..." )
 setup(name="ccscript",
       version="1.338",
       description="ccscript",
@@ -24,7 +24,7 @@ setup(name="ccscript",
       ext_modules=[
           Extension("ccscript",
                     source_files,
-                    language="c++",
+                    language="c++14",
                     extra_compile_args=extra_compile_args,
                     extra_link_args=extra_link_args
                     )
