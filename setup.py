@@ -17,15 +17,18 @@ if platform.system() == "Linux" or platform.system() == "Darwin":
       #print ("Args Fixed")
 #print ("{} is the current system on this device".format( platform.system()) )
 #print ("Setup is almost underway..." )
-setup(name="ccscript",
-      version="1.338",
-      description="ccscript",
-      url="http://starmen.net/pkhack/ccscript",
-      print ("""We've got trouble:
+
+print ("""We've got trouble:
       Source Files:{},
       extra_compile_args:{},
       extra_link_args:{}
       """.format(source_files,extra_compile_args,extra_link_args) )
+
+setup(name="ccscript",
+      version="1.338",
+      description="ccscript",
+      url="http://starmen.net/pkhack/ccscript",
+      
       ext_modules=[
           Extension("ccscript",
                     source_files,
