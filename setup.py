@@ -24,7 +24,7 @@ setup(name="ccscript",
       ext_modules=[
           Extension("ccscript",
                     source_files,
-                    language="c++14",
+                    language="c++17",
                     extra_compile_args=extra_compile_args,
                     extra_link_args=extra_link_args
                     )
